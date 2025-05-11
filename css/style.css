@@ -1154,4 +1154,23 @@ a.smooth-link {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+.btns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Tambahkan ini ke file CSS kamu */
+@media (max-width: 768px) {
+  .btns {
+    justify-content: center !important; /* Pusatkan konten saat mobile */
+    flex-wrap: nowrap;                  /* Jangan turun ke bawah */
+    gap: 8px !important;                /* Perkecil jarak antar tombol */
+  }
+
+  .btns a {
+    margin: 0 !important;
+    white-space: nowrap;
+  }
+}
 
