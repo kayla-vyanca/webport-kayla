@@ -1130,11 +1130,14 @@ a.smooth-link {
 
 
 /* Responsive untuk max-width: 992px */
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .responsive-btn-container {
-      flex-direction: row !important;   /* horizontal saat kecil */
-      flex-wrap: wrap;                  /* biar bisa ke bawah kalau tidak cukup */
-      gap: 12px;                        /* jarak antar tombol */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;        /* supaya tidak turun ke bawah */
+    align-items: center;      /* sejajarkan secara vertikal */
+    justify-content: flex-start; /* bisa juga pakai space-between/center sesuai kebutuhan */
+    gap: 12px;
   }
 
   .responsive-btn-container a {
