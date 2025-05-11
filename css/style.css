@@ -1129,22 +1129,6 @@ a.smooth-link {
 }
 
 
-/* Responsive untuk max-width: 992px */
-@media (max-width: 768px) {
-  .responsive-btn-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;        /* supaya tidak turun ke bawah */
-    align-items: center;      /* sejajarkan secara vertikal */
-    justify-content: flex-start; /* bisa juga pakai space-between/center sesuai kebutuhan */
-    gap: 12px;
-  }
-
-  .responsive-btn-container a {
-    margin: 0 !important;
-  }
-}
-
 .contact-icon {
   filter: brightness(0) saturate(100%) invert(62%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(90%);
 }
