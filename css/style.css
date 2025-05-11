@@ -793,7 +793,7 @@ body {
   .marquee-track {
     display: flex;
     gap: 2rem;
-    animation: scroll-left 20s linear infinite;
+    animation: scroll-left 10s linear infinite;
   }
   
   @keyframes scroll-left {
@@ -1127,4 +1127,44 @@ a.smooth-link {
   background-color: #4d77cb;
   color: #fff;
 }
+
+
+/* Responsive untuk max-width: 992px */
+@media (max-width: 450px) {
+  .responsive-btn-container {
+      flex-direction: row !important;   /* horizontal saat kecil */
+      flex-wrap: wrap;                  /* biar bisa ke bawah kalau tidak cukup */
+      gap: 12px;                        /* jarak antar tombol */
+  }
+
+  .responsive-btn-container a {
+    margin: 0 !important;
+  }
+}
+
+.contact-icon {
+  filter: brightness(0) saturate(100%) invert(62%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(90%);
+}
+
+.about-btn {
+  color: var(--txt-white);
+  background-color: var(--txt-primary);
+  padding: 0 20px;
+  box-sizing: content-box;
+  height: 43px;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: var(--duration);
+}
+
+.about-btn:is(:hover, :focus) {
+  background-color: #426bc2;
+}
+
+.about-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 
