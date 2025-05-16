@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
         <title>Portfolio</title>
+        <link rel="icon" href="image/code.png" type="image/png">
     </head>
     <body>
         <header class="header d-flex align-items-center position-fixed w-100">
@@ -599,28 +600,28 @@
                       <!-- RIGHT FORM -->
                       <div class="col-lg-6">
                         <div class="p-4 p-lg-5 rounded-4 contact-form-box">
-                          <form id="contactForm" action="https://formspree.io/f/mblgwoql" method="POST">
+                          <form action="https://formspree.io/f/mblgwoql" method="POST">
                             <div class="mb-3">
-                              <label class="form-label text-contact">Name</label>
-                              <input type="text" name="name" class="form-control rounded-3" placeholder="Kayla Vyanca" required>
+                                <label class="form-label text-contact">Name</label>
+                                <input type="text" name="name" class="form-control rounded-3" placeholder="Kayla Vyanca" required>
                             </div>
                             <div class="mb-3">
-                              <label class="form-label text-contact">Email</label>
-                              <input type="email" name="email" class="form-control rounded-3" placeholder="kayla@example.com" required>
+                                <label class="form-label text-contact">Email</label>
+                                <input type="email" name="email" class="form-control rounded-3" placeholder="kayla@example.com" required>
                             </div>
                             <div class="mb-3">
-                              <label class="form-label text-contact">Services</label>
-                              <input type="text" name="services" class="form-control rounded-3" placeholder="Front-End Development" required>
-                              </select>
+                                <label class="form-label text-contact">Services</label>
+                                <input type="text" name="services" class="form-control rounded-3" placeholder="Front-End Development" required>
                             </div>
                             <div class="mb-4">
-                              <label class="form-label text-contact">Message</label>
-                              <textarea name="message" rows="4" class="form-control rounded-3" placeholder="Type your message here" required></textarea>
+                                <label class="form-label text-contact">Message</label>
+                                <textarea name="message" rows="4" class="form-control rounded-3" placeholder="Type your message here" required></textarea>
                             </div>
                             <button type="submit" class="new-btn order-2 d-flex justify-content-center align-items-center shadow-none border-0 fw-bold">
                                 Get a Solution
                             </button>
-                          </form>
+                        </form>
+
                         </div>
                       </div>
                 
@@ -698,8 +699,9 @@
                     <!-- Newsletter -->
                     <div class="col-md-3 mb-4">
                         <h6 class="fw-bold mb-3" style="color: #7096D1;">Get the Latest Information</h6>
-                        <form id="contactForm" action="https://formspree.io/f/mblgwoql" method="POST" class="footer-form d-flex bg-white rounded-pill p-1" style="max-width: 100%;">
-                            <input type="email" class="form-control custom-input border-0 rounded-start-pill"  placeholder="Email address" />
+                        <form action="https://formspree.io/f/mblgwoql" method="POST" class="footer-form d-flex bg-white rounded-pill p-1" style="max-width: 100%;">
+                            <input type="email" name="email" class="form-control custom-input border-0 rounded-start-pill" placeholder="Email address" required/>
+                            <input type="hidden" name="_subject" value="New subscriber!" />
                             <button class="btn footer-button-form rounded-pill px-3" type="submit">&#10148;</button>
                         </form>
                     </div>
